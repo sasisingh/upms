@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import axios from "axios"
+import { useNavigate } from 'react-router-dom'
 
 const skillArr = ["HTML", "CSS", "ECMAScript", "ReactJS", "Redux"]
 
@@ -17,14 +18,17 @@ const AddUserForm = () => {
   const [facebook, setFacebook] = useState("")
   const [linkedin, setLinkedIn] = useState("")
   const [description, setDescribe] = useState("")
+  const navigate = useNavigate()
   const saveData = () => {
     console.log(profilePic, name, email, designation, password, gender, skills, twitter, instagram, facebook, linkedin, description)
     axios({
       method: "post",
-      url: "http://localhost:8080/api/v1/user/add",
+      url: "http://api.mern.co.in/api/v1/user/add",
       data: { profilePic, name, email, designation, password, gender, skills, twitter, instagram, facebook, linkedin, description }
     }).then((resp) => {
+      navigate("/")
       console.log(resp)
+
     }).catch((err) => {
       console.log("error ====>>", err)
     })

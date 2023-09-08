@@ -18,7 +18,7 @@ const UserDetails = () => {
   const getData = () => {
     axios({
       method: "GET",
-      url: `http://localhost:8080/api/v1/user/get/${userId}`,
+      url: `http://api.mern.co.in/api/v1/user/get/${userId}`,
     }).then((resp) => {
       console.log(resp)
       setUser(resp.data.data)

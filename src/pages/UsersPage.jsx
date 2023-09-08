@@ -9,7 +9,7 @@ const UsersPage = () => {
   const getData = ()=>{
 axios({
   method :"GET",
-  url:"http://localhost:8080/api/v1/user/get-all?page=1",
+  url:"http://api.mern.co.in/api/v1/user/get-all?page=1",
 }).then((resp)=>{
   console.log(resp)
   setUsers(resp.data.data.users)

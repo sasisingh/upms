@@ -18,7 +18,7 @@ const UserCard = ({ item }) => {
 			<div class="member">
 				<div class="member-img">
 					<Link to={`user-details/${item.id}`}>
-						<img src={item.profilePic || defaultPic} height="100%" width="100%" alt="" />
+						<img src={item.profilePic || defaultPic} height="400px" width="420px" alt="" />
 					</Link>
 					<div class="social">
 						<a href={item.twitter} target='_blank'><i class="bi bi-twitter"></i></a>

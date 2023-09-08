@@ -11,8 +11,8 @@ const Header = () => {
           </div>
           <nav id="navbar" class="navbar">
             <ul>
-              <li><Link to="/">Show Users Details</Link></li>
-              <li><Link to="/add-user">Add Users Details</Link></li>
+              <li><Link to="/"> Users</Link></li>
+              <li><Link to="/add-user">Add User</Link></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav>
