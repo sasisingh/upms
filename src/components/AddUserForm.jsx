@@ -40,7 +40,7 @@ const AddUserForm = () => {
     if (checked)
       setSkills([...skills, value])
     else {
-      const updateSkills = skills.filter((item) => item != value)
+      const updateSkills = skills.filter((item) => item !== value)
       setSkills(updateSkills)
     }
   }
