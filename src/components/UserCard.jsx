@@ -21,7 +21,7 @@ const UserCard = ({ item }) => {
 						<img src={item.profilePic || defaultPic} height="400px" width="420px" alt="" />
 					</Link>
 					<div class="social">
-						<a href={item.twitter} rel="noreferrer"target='_blank'><i class="bi bi-twitter"></i></a>
+						<a href={item.twitter} rel="noreferrer" target='_blank'><i class="bi bi-twitter"></i></a>
 						<a href={item.facebook} rel="noreferrer" target='_blank'><i class="bi bi-facebook"></i></a>
 						<a href={item.instagram} rel="noreferrer" target='_blank'><i class="bi bi-instagram"></i></a>
 						<a href={item.linkedIn} rel="noreferrer" target='_blank'><i class="bi bi-linkedin"></i></a>
@@ -30,7 +30,7 @@ const UserCard = ({ item }) => {
 				<div class="member-info">
 					<h4>{ucWord(item.name)}</h4>
 					<span>{item.designation}</span>
-				 <p>{item.description}</p>
+					<p>{item.description}</p>
 				</div>
 			</div>
 
