@@ -11,7 +11,7 @@ const Footer = () => {
         &copy; Copyright <strong><span>2023</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="/">Sasi</a>
+        Designed by <a href="/" rel="noreferrer">Sasi</a>
       </div>
     </div>
   </footer>

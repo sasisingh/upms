@@ -48,10 +48,10 @@ const UserDetails = () => {
                 {user?.designation}
               </p>
               <ul>
-                <li><a href={user?.twitter}><i class="bi bi-twitter"></i>Twitter</a></li>
-                <li><a href= {user?.facebook}><i class="bi bi-facebook"></i>Facebook</a></li>
-                <li><a href={user?.instagram}><i class="bi bi-instagram"></i>Instagram</a></li>
-                <li><a href={user?.linkedin}><i class="bi bi-linkedin"></i>LinkedIn</a></li>
+                <li><a href={user?.twitter} rel="noreferrer"><i class="bi bi-twitter"></i>Twitter</a></li>
+                <li><a href= {user?.facebook} rel="noreferrer"><i class="bi bi-facebook"></i>Facebook</a></li>
+                <li><a href={user?.instagram} rel="noreferrer"><i class="bi bi-instagram"></i>Instagram</a></li>
+                <li><a href={user?.linkedin} rel="noreferrer"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
               </ul>
               <p>
                 {user?.description}
