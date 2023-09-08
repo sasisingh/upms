@@ -28,8 +28,8 @@ const UserDetails = () => {
 	}
 
 	useEffect(() => {
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 		getData()
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	return (
